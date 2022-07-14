@@ -5,6 +5,7 @@ License: GPL
 Group: Graphical desktop/KDE
 Summary: SDDM Login theme adapted for OpenMandriva based on KaOS Midna
 Url: http://kaosx.us
+# https://github.com/KaOSx/midna/tree/master/sddm/midna
 Source:%{name}-%version.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
