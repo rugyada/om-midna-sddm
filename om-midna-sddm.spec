@@ -1,10 +1,6 @@
-%define name om-midna-sddm
-%define version 0.5
-%define release %mkrel 3
-
-Name: %{name}
-Version: %{version}
-Release: %{release}
+Name: om-midna-sddm
+Version: version 0.5
+Release: 4
 License: GPL
 Group: Graphical desktop/KDE
 Summary: SDDM Login theme adapted for OpenMandriva based on KaOS Midna
@@ -16,16 +12,13 @@ BuildArch:	noarch
 %description
 SDDM Login theme adapted for OpenMandriva based on KaOS Midna
 
-%files
-%{_datadir}/sddm/themes/om-midna-sddm
-
 %prep
-%setup -q -c
+%autosetup -p1 -c %{name}
 find . -type f | xargs chmod 0644
-
-%build
-# nothing
 
 %install
 mkdir -p %{buildroot}%{_datadir}/sddm/themes/om-midna-sddm
 cp -rf * %{buildroot}%{_datadir}/sddm/themes/om-midna-sddm/
+
+%files
+%{_datadir}/sddm/themes/om-midna-sddm
