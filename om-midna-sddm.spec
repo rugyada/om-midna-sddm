@@ -17,11 +17,11 @@ BuildArch:	noarch
 SDDM Login theme adapted for OpenMandriva based on KaOS Midna
 
 %files
-%{_datadir}/sddm/themes/om-midna-sddm
+%dir %{_datadir}/sddm/themes/om-midna-sddm/
+%{_datadir}/sddm/themes/om-midna-sddm/*
 
 %prep
-%setup -q -c
-find . -type f | xargs chmod 0644
+%setup -qn %{name}-%{version}/sddm/themes/om-midna-sddm/
 
 %build
 # nothing
@@ -29,3 +29,4 @@ find . -type f | xargs chmod 0644
 %install
 mkdir -p %{buildroot}%{_datadir}/sddm/themes/om-midna-sddm
 cp -rf * %{buildroot}%{_datadir}/sddm/themes/om-midna-sddm/
+
