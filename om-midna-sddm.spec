@@ -1,6 +1,6 @@
 %define name om-midna-sddm
 %define version 0.5
-%define release %mkrel 2
+%define release %mkrel 3
 
 Name: %{name}
 Version: %{version}
