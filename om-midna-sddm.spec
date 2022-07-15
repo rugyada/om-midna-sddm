@@ -1,6 +1,6 @@
 Name: om-midna-sddm
 Version: 0.5
-Release: 4
+Release: 5
 License: GPL
 Group: Graphical desktop/KDE
 Summary: SDDM Login theme adapted for OpenMandriva based on KaOS Midna
