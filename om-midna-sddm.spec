@@ -10,6 +10,8 @@ Source:%{name}-%version.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 
+Requires:	google-raleway-fonts
+
 %description
 SDDM Login theme adapted for OpenMandriva based on KaOS Midna
 
