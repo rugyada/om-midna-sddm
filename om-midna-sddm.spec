@@ -20,8 +20,8 @@ SDDM Login theme adapted for OpenMandriva based on KaOS Midna
 find . -type f | xargs chmod 0644
 
 %install
-mkdir -p %{buildroot}%{_datadir}/sddm/themes/om-midna-sddm
-cp -rf * %{buildroot}%{_datadir}/sddm/themes/om-midna-sddm/
+mkdir -p %{buildroot}%{_datadir}/sddm/themes/om-midna
+cp -rf * %{buildroot}%{_datadir}/sddm/themes/om-midna/
 
 %files
-%{_datadir}/sddm/themes/om-midna-sddm
+%{_datadir}/sddm/themes/om-midna
